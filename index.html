@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Onlyleaks key gen</title>
+    <title>OnlyLeaks key gen</title>
     <style>
         body {
             margin: 0;
@@ -33,14 +33,38 @@
     </div>
 
     <script>
+        const keys = [
+            "QWJlY2VkYXJpYW4=", "QWJzdGVtaW91cw==", "QWdvZw==", "QW5hY2hyb25pc20=",
+            "QW50ZWRpbHV2aWFu", "QXBvcGxleHk=", "QXJjYW5l", "QXNpbmluZQ==",
+            "QXVkYWNpb3Vz", "QmVkcmFnZ2xlZA==", "QmVsbGljb3Nl", "Qm9tYmFzdGlj",
+            "Qm93ZGxlcml6ZQ==", "Q2Fjb3Bob255", "Q2FwcmljaW91cw==", "Q2FydG9ncmFwaHk=",
+            "Q2hpbWVyaWNhbA==", "Q2h1cmxpc2g=", "Q29udW5kcnVt", "RGVmZW5lc3RyYXRpb24=",
+            "RGVsZXRlcmlvdXM=", "RGlzc29uYW5jZQ==", "RWJ1bGxpZW50", "RWNjZW50cmljaXR5=",
+            "RWZmZXJ2ZXNjZW50", "RW5lcnZhdGU=", "RXBoZW1lcmFs", "RXBpdG9tZQ==",
+            "RXNvdGVyaWM=", "RXhhY2VyYmF0ZQ==", "RmF0dW91cw==", "RmVsaWNpdHk=",
+            "RmxhYmJlcmdhc3RlZA==", "Rmx1bW1veA==", "RnJhY3Rpb3Vz", "R3JlZ2FyaW91cw==",
+            "SGFsY3lvbg==", "SGFyYW5ndWU=", "SGVnZW1vbnk=", "SW5lZmZhYmxl",
+            "SW5lcHRpdHVkZQ==", "SW5zaWRpb3Vz", "SW5zb3VjaWFuY2U=", "SW50ZXJsb2N1dG9y=",
+            "SW50cmFjdGFibGU=", "SnV4dGFwb3NpdGlvbg==", "TGFieXJpbnRoaW5l=",
+            "TGV0aGFyZ3k=", "TWFnbmFuaW1vdXM=", "TWFsZmVhc2FuY2U=", "TWlzYW50aHJvcGU=",
+            "TmVmYXJpb3Vz", "T2JmdXNjYXRl", "T2JzZXF1aW91cw==", "T2xpZ2FyY2h5=",
+            "UGFsbGlhdGU=", "UGFuYWNlYQ==", "UGVyZnVuY3Rvcnk=", "UGVyc3BpY2FjaW91cw==",
+            "UGhhbnRhc21hZ29yaWE=", "UXVpeG90aWM=", "UmVjYWxjaXRyYW50=",
+            "UmVkb2xlbnQ=", "UmVzcGxlbmRlbnQ=", "U2FnYWNpb3Vz=",
+            "U2FuY3RpbW9uaW91cw==", "U2FuZ3VpbmU=", "U2NpbnRpbGxhdGluZw==",
+            "U2VyZW5kaXBpdHk=", "U2VzcXVpcGVkYWxpYW4=", "U29saWxvcXV5=",
+            "U3VwZXJjaWxpb3Vz=", "U3VycmVwdGl0aW91cw==", "U3luZXJneQ==",
+            "VGFjaXR1cm4=", "VGFsaXNtYW4=", "VGF1dG9sb2d5=", "VHJlbmNoYW50=",
+            "VHJ1Y3VsZW50=", "VWJpcXVpdG91cw==", "VW5jdHVvdXM=", "VmFjaWxsYXRl=",
+            "VmljYXJpb3Vz=", "VmljaXNzaXR1ZGU=", "VmluZGljdGl2ZQ==",
+            "V2luc29tZQ==", "WGVub3Bob2JpYQ==", "WW9rZQ==", "WmVwaHly=",
+            "WmVuaXRo=", "QWJzdHJ1c2U=", "QW5hdGhlbWE=", "Qm9tYmluYXRl=",
+            "Q2F0YWNseXNt=", "RHJhY29uaWFu=", "RW5pZ21h=", "RmVjdW5k=",
+            "SW1icm9nbGlv=", "TWVsYW5jaG9seQ==", "UHVnbmFjaW91cw=="
+        ];
+
         window.onload = function() {
-            const keys = [
-                'cHJvdG90YmhpemNvb2w=',
-                'RzdOTGVhbml6Y29vbA==',
-                'ZG9vZGxlYm9iaXpjb29s',
-                'YWlkZW5pemNvb2w=',
-                'dGhpc2lzbm90YWtleXRydXN0'
-            ];
+            // Pick a random key from the keys array
             const randomKey = keys[Math.floor(Math.random() * keys.length)];
             document.getElementById('key').innerText = randomKey;
         };
