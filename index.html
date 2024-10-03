@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onlyleaks key gen</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            background: linear-gradient(to bottom, #00AEEF, #007BB8);
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        #descriptionBox {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div id="descriptionBox">
+        <h2>Your key is:</h2>
+        <p id="key"></p>
+    </div>
+
+    <script>
+        window.onload = function() {
+            const keys = [
+                'cHJvdG90YmhpemNvb2w=',
+                'RzdOTGVhbml6Y29vbA==',
+                'ZG9vZGxlYm9iaXpjb29s',
+                'YWlkZW5pemNvb2w=',
+                'dGhpc2lzbm90YWtleXRydXN0'
+            ];
+            const randomKey = keys[Math.floor(Math.random() * keys.length)];
+            document.getElementById('key').innerText = randomKey;
+        };
+    </script>
+</body>
+</html>
